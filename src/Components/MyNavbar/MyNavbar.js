@@ -16,7 +16,7 @@ function MyNavbar() {
             <Nav className="mr-auto">
               <Nav.Link href="/vlogs">Vlogs</Nav.Link>
               <Nav.Link href="/qanda">Q&A</Nav.Link>
-              <Nav.Link href="/leetcode">LeetCode</Nav.Link>
+              <Nav.Link href="/leetcode">LeetCode !!</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
