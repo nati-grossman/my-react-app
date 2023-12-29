@@ -4,8 +4,16 @@ import Code from '../Code/Code';
 function LeetCode() {
   return (
     <>
-      <h2>LeetCode !!</h2>
-      <Code/>
+      <div className='container-md'>
+        <div className='row'>
+          <div className='col-md-2'></div>
+          <div className='col-md-8'>
+            <h2>LeetCode !!</h2>
+            <Code/>
+          </div>
+          <div className='col-md-2'></div>
+        </div>        
+      </div>
     </>
   );
 }

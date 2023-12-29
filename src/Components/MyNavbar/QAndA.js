@@ -40,9 +40,9 @@ function QAndA() {
     <div className='container-md'>
       <h1>My Cards</h1>
       {chunkArray(data, 3).map((row, rowIndex) => (
-        <div key={rowIndex} className="row my-4">
+        <div key={rowIndex} className="row">
           {row.map((item, colIndex) => (
-            <div key={colIndex} className="col-md-4">
+            <div key={colIndex} className="col-md-4 my-3">
                <Card title={item.title} date={item.date} language={item.language} />
             </div>
           ))}
