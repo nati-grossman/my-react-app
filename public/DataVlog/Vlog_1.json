@@ -2,6 +2,10 @@
   "title": "Title 1",
   "date": "2023-01-01",
   "language": "JavaScript",
-  "text": "Description of Title 1",
-  "code": "console.log('Hello, World!');"
+  "vlog": [
+    {"text" :  "Description of Title 1"},
+    {"code" : "console.log('Hello, World!');"},
+    {"text" : "Description 2 of Title 1"},
+    {"code" : "console.log('Hello,!');"}
+  ]
 }
