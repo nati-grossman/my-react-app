@@ -8,14 +8,13 @@ function Vlogs() {
   useEffect(() => {
     const fetchVlogContent = async () => {
       try {
-        const response = await fetch(`../Data/Vlog_${vlogId}.json`); 
+        const response = await fetch(`../DataVlog/Vlog_${vlogId}.json`); 
         if (!response.ok) {
           throw new Error('Failed to fetch vlog content');
         }
         const text = await response.json();
         setVlogContent(text);
 
-        debugger
       } catch (error) {
         console.error('Error fetching vlog content:', error);
       }

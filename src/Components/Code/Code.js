@@ -32,7 +32,7 @@ function Code() {
   
   return (
     <>
-        <div className='card'>
+        <div className='card' dir="ltr">
             <div className='card-body'>
                 <SyntaxHighlighter language="csharp" style={okaidia} showLineNumbers>
                     {codeString}
@@ -40,7 +40,7 @@ function Code() {
             </div>
         </div>
 
-        <div className='card'>
+        <div className='card' dir="ltr">
             <div className='card-body'>
                 <SyntaxHighlighter language="csharp" style={pojoaque} showLineNumbers >
                     {codeStringAndStyle}
