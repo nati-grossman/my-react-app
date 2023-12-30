@@ -21,4 +21,22 @@ export function getSubtleBgClass(color) {
     }
 }
 
+export function getBgClassByLanguage(language) {
+    switch (language) {
+        case 'C#':
+            return 'bg-success';
+        case 'JavaScript':
+            return 'bg-danger';
+        case 'web':
+            return 'bg-primary';
+        case 'Python':
+            return 'bg-warning';
+        case 'Java':
+            return 'bg-info';
+        case 'c':
+            return 'bg-secondary';
+        default:
+            return ''; // Return empty string for unknown colors
+    }
+}
 

@@ -1,57 +1,87 @@
 import React, { useState, useEffect } from 'react';
+import Code from '../Code/Code';
+import { getBgClassByLanguage } from '../../Utils/helpers';
 
-function Vlogs() {
-  //const { vlogId } = 2;
-  const vlogId = 2;
-  const [vlogContent, setVlogContent] = useState([]);
+function Vlogs({ vlogId = 1 }) {
+  const [vlogContent, setVlogContent] = useState(null);
+  const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [languageClass, setLanguageClass] = useState('Java');
 
   useEffect(() => {
     const fetchVlogContent = async () => {
       try {
-        const response = await fetch(`../DataVlog/Vlog_${vlogId}.json`); 
+        const response = await fetch(`../DataVlog/Vlog_${vlogId}.json`);
         if (!response.ok) {
           throw new Error('Failed to fetch vlog content');
         }
-        const text = await response.json();
-        setVlogContent(text);
-
+        const data = await response.json();
+        setVlogContent(data);
+        setLanguageClass(getBgClassByLanguage(data.language));
       } catch (error) {
-        console.error('Error fetching vlog content:', error);
+        setError(error.message);
+      } finally {
+        setIsLoading(false);
       }
     };
+
     fetchVlogContent();
   }, [vlogId]);
 
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div className='bg-danger-subtle mx-auto'>Error: {error}</div>;
+  }
+
   return (
-    <>
-      <div>
-      <h2>Vlog {vlogId}</h2>
-      <div>
-        {Object.entries(vlogContent).map(([key, value]) => (
-          <div key={key}>
-            <strong>{key}:</strong> {value}
+    <div className="container mt-5">
+      <div className="row">
+        <div className='col-md-2'></div>
+        <div className="col-md-8">
+          <div className="card">
+            {vlogContent && (
+              <div className="card-body">
+                <div className='card-header bg-white border-5'>
+                    <h1 className="card-title">{vlogContent.title}</h1>
+                    <p className="card-text text-muted">{vlogContent.date}</p>
+                    <p className={`card-text d-inline badge rounded-5 ${languageClass}`}>{vlogContent.language}</p>
+                </div>
+
+                <div className='mx-2'>
+                  {vlogContent.vlog.map((item, index) => {
+                    if (item.subTitle) {
+                      return (
+                        <div key={index} className="my-4">
+                          <h2>{item.subTitle}</h2>
+                        </div>
+                      );
+                    } else if (item.text) {
+                      return (
+                        <div key={index} className="my-4">
+                          <p>{item.text}</p>
+                        </div>
+                      );
+                    } else if (item.codeSnippet) {
+                      return (
+                        <div key={index} className="my-4">
+                          <Code language="csharp" codeSnippet={item.codeSnippet} />
+                        </div>
+                      );
+                    }
+                    return null;
+                  })}
+                </div>
+              </div>
+            )}
           </div>
-        ))}
-      </div>
+        </div>
+        <div className='col-md-2'></div>
+      </div>      
     </div>
-    </>
   );
 }
 
 export default Vlogs;
-
-/*
-        const Url = `/src/Components/Data/Vlog_${vlogId}.txt`; 
-
-        var u = `C:/Users/natn0/OneDrive/שולחן העבודה/דברים שלי/project - react/small-prject-for-website/my-react-app/src/Components/Data/Vlog_1.txt`
-
-
-{vlogContent.map((section, index) => {
-        // Render text and code sections based on their types
-        return section.type === 'text' ? (
-          <p key={index}>{section.content}</p>
-        ) : (
-          <pre key={index}>{section.content}</pre>
-        );
-      })}
-*/

@@ -1,17 +1,9 @@
 import React from 'react';
+import { getBgClassByLanguage } from '../../Utils/helpers';
 
 const Card = ({ title, date, language }) => {
-  let languageClass = '';
-  if (language === 'JavaScript') {
-    languageClass = 'bg-success';
-  } else if (language === 'C#') {
-    languageClass = 'bg-info';
-  } else if (language === 'Python') {
-    languageClass = 'bg-warning';
-  } else {
-    languageClass = 'bg-danger';
-  }
-
+  const languageClass = getBgClassByLanguage(language);
+  
   return (
     <div className="card shadow-lg btn">
       <div className="card-body">

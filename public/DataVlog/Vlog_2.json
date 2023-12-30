@@ -2,6 +2,10 @@
     "title": "Title 2",
     "date": "2023-01-02",
     "language": "C#",
-    "text": "Description of Title 2",
-    "code": "Console.WriteLine(\"Hello, World!\");"
+    "vlog": [
+        {"text": "Description of Title 2"},
+        {"codeSnippet": "// Using string concatenation (inefficient)\nstring result = \"\";\nfor (int i = 0; i < 1000; i++) {\n    result += i.ToString();\n}\n\n// Using StringBuilder (efficient)\nStringBuilder stringBuilder = new StringBuilder();\nfor (int i = 0; i < 1000; i++) {\n    stringBuilder.Append(i);\n}\nstring efficientResult = stringBuilder.ToString();"},
+        {"subTitle": "Description"},
+        {"text": "Description of Title 2"}
+    ]
 }
