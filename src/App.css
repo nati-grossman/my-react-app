@@ -1,0 +1,13 @@
+.bg-hover-navbar:hover {
+    background-color: rgba(220, 53, 69) !important; 
+}
+
+.sticky {
+    position: sticky  !important; 
+    top: 0  !important; 
+    z-index: 1000 !important; 
+}
+
+.bg-hover-footer:hover {
+    color: rgba(220, 53, 69) !important; 
+}

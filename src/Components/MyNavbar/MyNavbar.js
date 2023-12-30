@@ -11,16 +11,16 @@ function MyNavbar() {
   return (
     <Router>
       <div dir="rtl">
-        <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
+        <Navbar bg="dark" expand="lg" className='sticky'>
+          <Navbar.Brand href="/"className='text-white mx-4'>React-Bootstrap</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="/vlogs">Vlogs</Nav.Link>
-              <Nav.Link href="/qanda">Q&A</Nav.Link>
-              <Nav.Link href="/leetcode">LeetCode !!</Nav.Link>
-              <Nav.Link href="/displayvlog">DisplayVlog</Nav.Link>
-              <Nav.Link href="/displayqanda">DisplayQAndA</Nav.Link>
+              <Nav.Link href="/vlogs" className='border-5 border-bottom text-white mx-2 bg-hover-navbar'>Vlogs</Nav.Link>
+              <Nav.Link href="/qanda" className='border-5 border-bottom text-white mx-2 bg-hover-navbar'>Q&A</Nav.Link>
+              <Nav.Link href="/leetcode" className='border-5 border-bottom text-white mx-2 bg-hover-navbar'>LeetCode !!</Nav.Link>
+              <Nav.Link href="/displayvlog" className='border-5 border-bottom text-white mx-2 bg-hover-navbar'>DisplayVlog</Nav.Link>
+              <Nav.Link href="/displayqanda" className='border-5 border-bottom text-white mx-2 bg-hover-navbar'>DisplayQAndA</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
