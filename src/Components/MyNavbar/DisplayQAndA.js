@@ -26,11 +26,11 @@ function DisplayQAndA({ fileName = 1 }) {
     };
 
     return (
-        <div className="container mt-5">
+        <div className="container my-5" style={{height:'70rem'}}>
             <div className="row justify-content-center" dir="rtl">
                 
                 <div className="col-md-2">
-                    <div className='card mt-5'>
+                    <div className='card my-5'>
                         <p>"{subtleBgClass}"</p>
                         <select className="form-select" value={selectedColor} onChange={handleColorChange}>
                             <option value="danger">Danger</option>

@@ -24,6 +24,7 @@ function QAndA() {
     { title: 'Title 18', date: '2023-01-18', language: 'C#' },
   ];
 
+
   function chunkArray(array, size) {
     return array.reduce((chunks, el, i) => {
       if (i % size === 0) {
@@ -35,11 +36,14 @@ function QAndA() {
     }, []);
   }
 
+  const chunkedData = chunkArray(data, 3);
+
+
   return (
     <>
-    <div className='container-md'>
+    <div className='container-md my-4'>
       <h1>My Cards</h1>
-      {chunkArray(data, 3).map((row, rowIndex) => (
+      {chunkedData.map((row, rowIndex) => (
         <div key={rowIndex} className="row">
           {row.map((item, colIndex) => (
             <div key={colIndex} className="col-md-4 my-3">

@@ -37,7 +37,7 @@ function Vlogs({ vlogId = 1 }) {
   }
 
   return (
-    <div className="container mt-5">
+    <div className="container my-5">
       <div className="row">
         <div className='col-md-2'></div>
         <div className="col-md-8">
