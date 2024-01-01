@@ -1,11 +1,14 @@
 import React, { useState , useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getSubtleBgClass } from '../../Utils/helpers';
+import Error from '../Error/Error';
+import BackButton from '../MyNavbar/BackButton';
 
 function DisplayQAndA() {
     const { fileId } = useParams();
     
     const [selectedColor, setSelectedColor] = useState('');
+    const [error, setError] = useState(null);
     const [jsonData, setJsonData] = useState(null);
     const subtleBgClass = getSubtleBgClass(selectedColor);
   
@@ -16,14 +19,17 @@ function DisplayQAndA() {
           setJsonData(data);
           setSelectedColor(data.BgColor);
         })
-        .catch((error) => {
-          console.error('Error fetching data:', error);
-        });
+        .catch((error) => setError(error.message));
     }, [fileId]);
 
 
+    if (error) {
+        return <Error message={error} />;
+    }
+
     return (
         <div className="container my-5 py-5 min-vh-100">
+            <BackButton />
             <div className="row justify-content-center py-5" dir="rtl">
                 <div className='col-md-2'></div>
                 {jsonData && (
