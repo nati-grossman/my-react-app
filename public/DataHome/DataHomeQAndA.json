@@ -1,6 +1,6 @@
 [
-    { "title": "Title 1", "date": "2023-01-01", "language": "JavaScript" },
-    { "title": "Title 2", "date": "2023-01-02", "language": "C#" },
+    { "title": "Title 1", "date": "2023-01-01", "language": "JavaScript", "isNew" : true },
+    { "title": "Title 2", "date": "2023-01-02", "language": "C#", "isNew" : true},
     { "title": "Title 3", "date": "2023-01-03", "language": "Python" },
     { "title": "Title 4", "date": "2023-01-04", "language": "Java" }
 ]
