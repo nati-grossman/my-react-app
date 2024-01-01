@@ -8,7 +8,7 @@ function QAndAHome() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('./DataHome/aDataHomeQAndA.json')
+    fetch('./DataHome/DataHomeQAndA.json')
       .then((response) => response.json())
       .then((jsonData) => {    
         setData(chunkArray(jsonData, 3))
@@ -16,9 +16,15 @@ function QAndAHome() {
       .catch((error) => setError(error.message));
   }, []);
 
+
+  if (error) {
+    return <Error message={error} />;
+  }
+
+
   return (
-    <div className="container min-vh-100">
-      <h1>Questions and Answers</h1>
+    <div className="container min-vh-100" dir='rlt'>
+      <h1>שאלות ותשובות לראיונות עבודה</h1>
       <div>
         {data.map((row, rowIndex) => (
         <div key={rowIndex} className="row">
@@ -30,7 +36,6 @@ function QAndAHome() {
         </div>
         ))}
       </div>
-      {error && <Error message={error} />}
     </div>
   );
 }
