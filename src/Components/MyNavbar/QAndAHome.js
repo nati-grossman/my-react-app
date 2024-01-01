@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../Card/Card';
+import Error from '../Error/Error';
 import { chunkArray } from '../../Utils/helpers';
 
 function QAndAHome() {
   const [data, setData] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('./DataHome/DataHomeQAndA.json')
+    fetch('./DataHome/aDataHomeQAndA.json')
       .then((response) => response.json())
       .then((jsonData) => {    
         setData(chunkArray(jsonData, 3))
       })
-      .catch((error) => console.error('Error fetching data:', error));
+      .catch((error) => setError(error.message));
   }, []);
 
   return (
@@ -28,6 +30,7 @@ function QAndAHome() {
         </div>
         ))}
       </div>
+      {error && <Error message={error} />}
     </div>
   );
 }
