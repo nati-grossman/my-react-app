@@ -3,11 +3,14 @@ import Code from '../Code/Code';
 import { getBgClassByLanguage } from '../../Utils/helpers';
 
 function Vlogs({ vlogId = 1 }) {
+  
+  
   const [vlogContent, setVlogContent] = useState(null);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [languageClass, setLanguageClass] = useState('Java');
 
+  
   useEffect(() => {
     const fetchVlogContent = async () => {
       try {

@@ -4,6 +4,7 @@ import { okaidia } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function DisplayVlog() {
 
+
     const code1 = `function factorial(n) {
     if (n === 0 || n === 1) {
         return 1;

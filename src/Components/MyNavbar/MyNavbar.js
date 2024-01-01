@@ -6,7 +6,7 @@ import QAndA from './QAndA';
 import LeetCode from './LeetCode';
 import DisplayVlog from './DisplayVlog';
 import DisplayQAndA from './DisplayQAndA';
-import QAndAHome from './QAndAHome';
+import QAndAHome from '../QAndA/QAndAHome';
 
 function MyNavbar() {
 
@@ -24,13 +24,17 @@ function MyNavbar() {
               <Nav.Link as={NavLink} to="/qanda" className='border-5 border-bottom text-white mx-2 bg-hover-navbar link-offset-3'>Q&A</Nav.Link>
               <Nav.Link as={NavLink} to="/leetcode" className='border-5 border-bottom text-white mx-2 bg-hover-navbar link-offset-3'>LeetCode !!</Nav.Link>
               <Nav.Link as={NavLink} to="/displayvlog" className='border-5 border-bottom text-white mx-2 bg-hover-navbar link-offset-3'>DisplayVlog</Nav.Link>
-              <Nav.Link as={NavLink} to="/displayqanda" className='border-5 border-bottom text-white mx-2 bg-hover-navbar link-offset-3'>DisplayQAndA</Nav.Link>
+              {/* <Nav.Link as={NavLink} to="/displayqanda" className='border-5 border-bottom text-white mx-2 bg-hover-navbar link-offset-3'>DisplayQAndA</Nav.Link> */}
               <Nav.Link as={NavLink} to="/qandahome" className='border-5 border-bottom text-white mx-2 bg-hover-navbar link-offset-3'>QAndAHome</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
         <Routes>
           <Route path="/vlogs" element={<Vlogs />} />
+
+
+          <Route exact path="/DisplayQAndA/:fileId" element={<DisplayQAndA />}  />
+
           <Route path="/qanda" element={<QAndA />} />
           <Route path="/leetcode" element={<LeetCode />} />
           <Route path="/displayvlog" element={<DisplayVlog />} />

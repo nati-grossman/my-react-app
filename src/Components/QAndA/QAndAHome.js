@@ -34,7 +34,7 @@ function QAndAHome() {
                 <div key={rowIndex} className="row">
                     {row.map((item, colIndex) => (
                         <div key={colIndex} className="col-md-4 my-3">
-                            <Card title={item.title} date={item.date} language={item.language} isNew={item.isNew} />
+                            <Card title={item.title} date={item.date} language={item.language} isNew={item.isNew} fileId={item.id}/>
                         </div>
                     ))}
                 </div>

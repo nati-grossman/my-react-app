@@ -1,4 +1,4 @@
-.bg-hover-navbar:hover {
+.bg-hover-navbar:hover , .active{
     background-color: rgba(220, 53, 69) !important; 
 }
 
