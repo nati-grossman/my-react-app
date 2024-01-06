@@ -9,6 +9,20 @@
     { 
         "id" : 2, 
         "title" : "מה ההבדל בין == ו=== ב-C#?", 
+        "date" : "2023-01-01", 
+        "language" : "C#", 
+        "isNew" : false
+    },
+    { 
+        "id" : 3, 
+        "title" : "מה ההבדל בין משתנים של ref ו-out ב-C#?", 
+        "date" : "2023-01-02", 
+        "language" : "C#", 
+        "isNew" : false
+    },
+    { 
+        "id" : 4, 
+        "title" : "מה ההבדלים בין סוגי המשתנים  value type ו reference types ב-C#?", 
         "date" : "2023-01-02", 
         "language" : "C#", 
         "isNew" : false

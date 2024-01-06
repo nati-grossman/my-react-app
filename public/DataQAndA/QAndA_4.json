@@ -1,0 +1,12 @@
+{
+    "Question": "מה ההבדלים בין סוגי המשתנים  value type ו reference types ב-C#?",
+    "Answer": [
+        "משתני value type מאחסנים את הנתונים האמיתיים שלהם, בעוד ש reference types מאחסנים הפניה לנתונים שלהם.",
+        "משתני value type מאוחסנים בערימה, בעוד ש reference types מאוחסנים בערימה.",
+        "משתני value type כוללים סוגים פשוטים כמו int, float, bool וכו', ומבנים, בעוד ש reference types כוללים מחלקות, ממשקים, וכו'.",
+        "כאשר ערך של משתני value type מועבר למשתנה אחר או מועבר למתודה, נוצר העתק של הערך, בעוד ש reference types מועברת ההפניה לאובייקט."
+    ],
+    "BgColor": "danger",
+    "date": "2023-01-02", 
+    "language": "C#"
+}
