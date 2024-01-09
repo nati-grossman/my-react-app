@@ -28,10 +28,12 @@ function DisplayQAndA() {
     }
 
     return (
-        <div className="container my-5 py-5 min-vh-100">
-            <BackButton />
+        <div className="container py-5 min-vh-100">
+            
             <div className="row justify-content-center py-5" dir="rtl">
-                <div className='col-md-2'></div>
+                <div className='col-md-2'>
+                    <BackButton />
+                </div>
                 {jsonData && (
                 <div className="col-md-8 p-0 rounded shadow-lg">
                     <div className={`card shadow-lg ${subtleBgClass}`}>
@@ -45,13 +47,13 @@ function DisplayQAndA() {
                         <div className="card-body">
                             <div className="mb-3">
                             <h3 className="card-title">שאלה</h3>
-                            <p className="card-text fw-normal h4 p-3 lh-base">  {jsonData.Question} </p>
+                            <p className="card-text fw-normal h5 p-3 lh-base">  {jsonData.Question} </p>
                             </div>
                             <div className="mb-3">
                                 <h3 className="card-title">תשובה</h3>
                                 <div className='p-3'>
                                     {jsonData.Answer.map((item, index) => (
-                                        <p className="card-text fw-normal h4 lh-base" key={index}> {item} </p>
+                                        <p className="card-text fw-normal h5 lh-base" key={index}> {item} </p>
                                     ))} 
                                 </div>                                                           
                             </div>

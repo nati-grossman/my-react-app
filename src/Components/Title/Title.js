@@ -6,7 +6,7 @@ function Title({ theTitle, subTitle = '' }) {
   return (
     <>
         <div className="container mt-5">
-            <div className="text-center">
+            <div className="text-center text-white" style={{fontFamily: 'sans-serif'}}>
                 <h1 className="display-4">{theTitle}</h1>
                 <p className="lead">{subTitle}</p>
             </div>
