@@ -7,7 +7,7 @@ import LeetCode from './LeetCode';
 import DisplayVlog from './DisplayVlog';
 import DisplayQAndA from './DisplayQAndA';
 import QAndAHome from '../QAndA/QAndAHome';
-import QandaBlack from '../QandaBlack/QandaBlack';
+import QandaBlack from '../QandaBlackEX/QandaBlack';
 import  './MyNavbar.css';
 
 function MyNavbar() {

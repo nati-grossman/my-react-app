@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Card from '../Card/Card';
+//import Card from '../Card/Card';
 import Error from '../Error/Error';
 import Title from '../Title/Title';
+import CardBlack from '../CardBlack/CardBlack';
 import { chunkArray } from '../../Utils/helpers';
 
 function QAndAHome() {
@@ -34,7 +35,8 @@ function QAndAHome() {
                 <div key={rowIndex} className="row">
                     {row.map((item, colIndex) => (
                         <div key={colIndex} className="col-md-4 my-3">
-                            <Card title={item.title} date={item.date} language={item.language} isNew={item.isNew} fileId={item.id}/>
+                            <CardBlack title={item.title} date={item.date} language={item.language} isNew={item.isNew} fileId={item.id}/>
+                            {/* <Card title={item.title} date={item.date} language={item.language} isNew={item.isNew} fileId={item.id}/> */}
                         </div>
                     ))}
                 </div>

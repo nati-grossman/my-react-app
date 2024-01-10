@@ -1,7 +1,7 @@
 import React from 'react';
 import './QandaBlackStyle.css';
 
-const QandaBlack = () => {
+function QandaBlack () {
 
     /*
     const data = [
