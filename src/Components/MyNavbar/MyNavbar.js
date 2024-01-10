@@ -7,7 +7,6 @@ import LeetCode from './LeetCode';
 import DisplayVlog from './DisplayVlog';
 import DisplayQAndA from './DisplayQAndA';
 import QAndAHome from '../QAndA/QAndAHome';
-import QandaBlack from '../QandaBlackEX/QandaBlack';
 import  './MyNavbar.css';
 
 function MyNavbar() {
@@ -27,7 +26,6 @@ function MyNavbar() {
               <Nav.Link as={NavLink} to="/leetcode" className='border-5 border-bottom text-white mx-2 bg-hover-navbar link-offset-3'>LeetCode !!</Nav.Link>
               <Nav.Link as={NavLink} to="/displayvlog" className='border-5 border-bottom text-white mx-2 bg-hover-navbar link-offset-3'>DisplayVlog</Nav.Link>
               <Nav.Link as={NavLink} to="/qandahome" className='border-5 border-bottom text-white mx-2 bg-hover-navbar link-offset-3'>QAndAHome</Nav.Link>
-              <Nav.Link as={NavLink} to="/qandablack" className='border-5 border-bottom text-white mx-2 bg-hover-navbar link-offset-3'>QandaBlack</Nav.Link>
 
             </Nav>
           </Navbar.Collapse>
@@ -40,8 +38,6 @@ function MyNavbar() {
           <Route path="/displayvlog" element={<DisplayVlog />} />
           <Route path="/displayqanda" element={<DisplayQAndA />} />
           <Route path="/qandahome" element={<QAndAHome />} />
-
-          <Route path="/qandablack" element={<QandaBlack />} />
         </Routes>
       </div>
     </Router>
