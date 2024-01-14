@@ -52,3 +52,21 @@ export function chunkArray(array, size) {
     }, []);
   }
 
+
+  export function getColorCircle(fileId) {
+    switch (fileId % 5) {
+        case 1:
+          return 'green_circle';
+        case 2:
+          return 'red_circle';
+        case 3:
+          return 'purple_circle';
+        case 4:
+          return 'pink_circle';  
+        case 0:
+          return 'blue_circle';
+        default:
+          return 'Invalid number';
+    }
+}
+

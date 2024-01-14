@@ -68,11 +68,11 @@ body {
   }
 
 
-  .card-body {
+  .card-body-2 {
     z-index: 2;
   }
 
-  .card {
+  .card-black {
     background-color: #121212;
     border-radius: 25px;
   }
