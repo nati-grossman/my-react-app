@@ -1,6 +1,6 @@
 import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { okaidia , prism, pojoaque , vscDarkPlus} from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { okaidia, prism, vscDarkPlus} from 'react-syntax-highlighter/dist/esm/styles/prism';
 import CodeToolbar from './CodeToolbar';
 
 function Code( {language = "csharp" , codeSnippet = "Console.WriteLine('Hello, World!');" }) {
@@ -11,15 +11,6 @@ function Code( {language = "csharp" , codeSnippet = "Console.WriteLine('Hello, W
             <div className='card-body'>
                 <CodeToolbar languageIcon={"C#"} codeSnippet={codeSnippet} />
                 <SyntaxHighlighter language={language} style={okaidia} showLineNumbers className='rounded-top-0 mt-0'>
-                    {codeSnippet}
-                </SyntaxHighlighter>
-            </div>
-        </div>
-
-        <div className='card' dir="ltr">
-            <div className='card-body'>
-                <CodeToolbar languageIcon={"C#"} codeSnippet={codeSnippet} />
-                <SyntaxHighlighter language={language} style={pojoaque} showLineNumbers  className='rounded-top-0 mt-0'>
                     {codeSnippet}
                 </SyntaxHighlighter>
             </div>

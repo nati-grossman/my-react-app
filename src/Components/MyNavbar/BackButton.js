@@ -10,9 +10,11 @@ const BackButton = () => {
   };
 
   return (
-    <button type="button" class="btn btn-info p-2" onClick={goBack}>
-         <FaArrowRight />    בחזרה
-    </button>
+    <div className='mt-2'>
+      <button type="button" className="border-0 btn btn-info p-2 rounded-4" onClick={goBack}>
+        <FaArrowRight />    בחזרה
+      </button>
+    </div>    
   );
 };
 

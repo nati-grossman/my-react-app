@@ -8,7 +8,7 @@ import DisplayVlog from './DisplayVlog';
 import DisplayQAndA from './DisplayQAndA';
 import QAndAHome from '../QAndA/QAndAHome';
 import VlogHome from '../Vlog/VlogHome';
-
+import VlogPage from '../Vlog/VlogPage';
 import  './MyNavbar.css';
 
 function MyNavbar() {
@@ -42,6 +42,7 @@ function MyNavbar() {
           <Route path="/displayqanda" element={<DisplayQAndA />} />
           <Route path="/qandahome" element={<QAndAHome />} />
           <Route path="/vloghome" element={<VlogHome />} />
+          <Route exact path="/vlogpage/:fileId" element={<VlogPage />} />
         </Routes>
       </div>
     </Router>

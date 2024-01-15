@@ -9,5 +9,6 @@
 }
 
 .bg-hover-footer:hover {
-    color: rgba(220, 53, 69) !important; 
+    border-bottom: 0.5px solid;
+    padding-bottom: 2px;
 }

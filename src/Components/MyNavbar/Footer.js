@@ -1,18 +1,23 @@
 import React from 'react';
-import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGooglePlusSquare } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
+  const refLinkedin = "https://www.linkedin.com/in/nati-grossman-8a06071a2/";
+  const rdfGoogle = "mailto:natngr96@gmail.com";
+  
   return (
     <footer className="bg-dark text-light text-center py-3" dir="rtl">
       <div className="container">
         <div className="row">
           <div className="col">
             <p>צור קשר:</p>
-            <a href="https://www.linkedin.com/in/nati-grossman-8a06071a2/" target="_blank" rel="noopener noreferrer" className="text-light bg-hover-footer ms-3">
-              <FaLinkedin size={24} />
+            <a href={refLinkedin} target="_blank" rel="noopener noreferrer" className="text-light bg-hover-footer ms-3">
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+
             </a>
-            <a href="mailto:natngr96@gmail.com" className="text-light bg-hover-footer">
-              <FaEnvelope size={24} />
+            <a href={rdfGoogle} target="_blank" rel="noopener noreferrer" className="text-light bg-hover-footer">
+              <FontAwesomeIcon icon={faGooglePlusSquare} size="2x" />
             </a>
           </div>
         </div>

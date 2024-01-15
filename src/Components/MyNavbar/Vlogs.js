@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Code from '../Code/Code';
+import BackButton from './BackButton';
 import ShareVlog from '../ShareVlog/ShareVlog';
 import { getBgClassByLanguage } from '../../Utils/helpers';
 
@@ -83,6 +84,8 @@ function Vlogs({ vlogId = 1 }) {
               </div>              
             )}
           </div>
+
+          <BackButton />
         </div>
         <div className='col-md-2'></div>
       </div>      
