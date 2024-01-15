@@ -47,7 +47,7 @@ function Vlogs({ vlogId = 1 }) {
           <div className="card">
             {vlogContent && (
               <div className="card-body">
-                 <ShareVlog vlogId={vlogId} />
+                 
                 <div className='card-header bg-white border-5'>
                     <h1 className="card-title">{vlogContent.title}</h1>
                     <p className="card-text text-muted">{vlogContent.date}</p>
@@ -78,6 +78,8 @@ function Vlogs({ vlogId = 1 }) {
                     return null;
                   })}
                 </div>
+
+                <ShareVlog vlogId={vlogId} />
               </div>              
             )}
           </div>
