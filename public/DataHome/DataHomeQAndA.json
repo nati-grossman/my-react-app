@@ -26,6 +26,48 @@
         "date" : "2023-01-02", 
         "language" : "C#", 
         "isNew" : false
+    },
+    { 
+        "id" : 5, 
+        "title" : "מה ההבדל בין undefined ל-null ב-JavaScript?", 
+        "date" : "2023-01-16", 
+        "language" : "JavaScript", 
+        "isNew" : false
+    },
+    { 
+        "id" : 6, 
+        "title" : "הסבר את המושג closures ב-JavaScript", 
+        "date" : "2023-01-16", 
+        "language" : "JavaScript", 
+        "isNew" : false
+    },
+    { 
+        "id" : 7, 
+        "title" : "הסבר את מטרת ה- 'using block' ב-C#", 
+        "date" : "2023-01-15", 
+        "language" : "C#", 
+        "isNew" : false
+    },
+    { 
+        "id" : 8, 
+        "title" : "מה ההבדל בין IEnumerable ל-IEnumerator ב-C#?", 
+        "date" : "2023-01-20", 
+        "language" : "C#", 
+        "isNew" : false
+    },
+    { 
+        "id" : 9, 
+        "title" : "הסבירו את המטרה של מעבדי קדם של CSS כמו Sass או LESS ואת היתרונות שלהם.", 
+        "date" : "2023-01-20", 
+        "language" : "CSS", 
+        "isNew" : false
+    },
+    { 
+        "id" : 10, 
+        "title" : "תאר בקצרה את המנגנונים של event bubbling ו-event capturing ב-JavaScript.", 
+        "date" : "2023-01-24", 
+        "language" : "JavaScript", 
+        "isNew" : false
     }
 ]
   

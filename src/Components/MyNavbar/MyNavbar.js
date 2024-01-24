@@ -9,6 +9,8 @@ import DisplayQAndA from './DisplayQAndA';
 import QAndAHome from '../QAndA/QAndAHome';
 import VlogHome from '../Vlog/VlogHome';
 import VlogPage from '../Vlog/VlogPage';
+import HomePage from '../HomePage/HomePage';
+
 import  './MyNavbar.css';
 
 function MyNavbar() {
@@ -34,6 +36,7 @@ function MyNavbar() {
           </Navbar.Collapse>
         </Navbar>
         <Routes>
+          <Route path="/" element={<HomePage />} />
           <Route path="/vlogs" element={<Vlogs />} />
           <Route exact path="/DisplayQAndA/:fileId" element={<DisplayQAndA />}  />
           <Route path="/qanda" element={<QAndA />} />

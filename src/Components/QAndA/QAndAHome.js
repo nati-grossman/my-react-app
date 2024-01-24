@@ -42,7 +42,7 @@ function QAndAHome() {
     <div  dir='rlt' className="container min-vh-100">
         <Title theTitle={theTitle} subTitle={subTitle}/>
       
-        <div>
+        <div className='mb-5'>
             {data.map((row, rowIndex) => (
                 <div key={rowIndex} className="row">
                     {row.map((item, colIndex) => (

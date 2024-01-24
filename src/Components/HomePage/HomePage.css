@@ -1,0 +1,79 @@
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .image-container-opacity {
+    opacity: 0.5;
+  }
+
+  .image-container img {
+    transition: transform 0.5s ease; 
+  }
+  
+  .image-container img.rotated {
+    transform: rotate(15deg); 
+  }
+  
+  .titleExplan {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .textExplan {
+    font-size: 1.5em;
+    line-height: 1.6;
+  }
+  
+  .text-container {
+    font-family: Arial, sans-serif;
+  }
+
+  @media (max-width: 767px) {
+    .text-container {
+      padding: 0rem!important;
+      margin: 0rem!important;
+    }
+  }
+
+  
+  /* Additional styles for hover effect */
+  
+  .rhombus {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 10px rgba(234, 228, 228, 0.5);
+    transform: rotate(45deg);
+    transition: background-color 0.3s ease;
+  }
+  
+  .number {
+    position: absolute;
+    top: 30%; /* Adjust the top position to move the number higher */
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    transform: rotate(-45deg); /* Counter-rotate the number to keep it straight */
+  }
+  
+  
+  /* Additional styles for hover effect */
+  .rhombus:hover {
+    background-color: rgba(220, 53, 69);
+  }
+
+  .titleWeb {
+    font-size: 5.5em; /* Set the font size of the title */
+    font-family: Arial, sans-serif;
+  }
+  
+  .subTitleWeb {
+    font-size: 2.5em; /* Set the font size of the subtitle */
+    font-family: Arial, sans-serif; 
+  }
+  

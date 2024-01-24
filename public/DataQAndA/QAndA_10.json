@@ -1,0 +1,13 @@
+{
+    "Question": "תאר בקצרה את המנגנונים של event bubbling ו-event capturing ב-JavaScrip",
+    "Answer": [
+        "event bubbling ו-event capturing הם שתי דרכים שבהן אירועים מתפשטים דרך ה-DOM ב-JavaScript.",
+        "event bubbling: לאחר שאירוע מתרחש על אלמנט, הוא מופעל תחילה על האלמנט הפנימי ביותר ולאחר מכן מתפשט אל אבותיו.",
+        "event capturing: לעומת זאת, מתחילה מהאלמנט החיצוני ביותר ונעה לעבר אלמנט המטרה.",
+        "אתה יכול לשלוט באיזה שלב לטפל באירוע על ידי שימוש בפונקציה addEventListener אשר מקבלת בפרמטר השלישי ערך בוליאני: ",
+        "true - יש לטפל באירוע בשיטה של event capturing.",
+        "false - יש לטפל באירוע בשיטה של event bubbling (זה גם השיטה הדיפולטיבית)."
+    ],
+    "date": "2023-01-24", 
+    "language": "JavaScript"
+}

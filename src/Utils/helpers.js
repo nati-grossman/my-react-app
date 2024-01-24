@@ -22,18 +22,19 @@ export function getSubtleBgClass(color) {
 }
 
 export function getBgClassByLanguage(language) {
+    language = language.toLowerCase();
     switch (language) {
-        case 'C#':
+        case 'c#':
             return 'bg-success';
-        case 'JavaScript':
+        case 'javascript':
             return 'bg-danger';
         case 'web':
             return 'bg-primary';
-        case 'Python':
+        case 'python':
             return 'bg-warning';
-        case 'Java':
+        case 'java':
             return 'bg-info';
-        case 'c':
+        case 'css':
             return 'bg-secondary';
         default:
             return ''; // Return empty string for unknown colors
