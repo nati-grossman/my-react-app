@@ -5,5 +5,12 @@
         "date" : "2024-01-14", 
         "language" : "C#", 
         "isNew" : true 
+    },
+    { 
+        "id" : 2, 
+        "title" : "מהו סוג אובייקט (object) ב-c#?",
+        "date" : "2024-01-27", 
+        "language" : "C#", 
+        "isNew" : false 
     }
 ]

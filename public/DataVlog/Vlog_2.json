@@ -1,11 +1,21 @@
 {
-    "title": "Title 2",
-    "date": "2023-01-02",
+    "title": "מהו סוג אובייקט (object) ב-c#?",
+    "date": "2024-01-27",
     "language": "C#",
     "vlog": [
-        {"text": "Description of Title 2"},
-        {"codeSnippet": "// Using string concatenation (inefficient)\nstring result = \"\";\nfor (int i = 0; i < 1000; i++) {\n    result += i.ToString();\n}\n\n// Using StringBuilder (efficient)\nStringBuilder stringBuilder = new StringBuilder();\nfor (int i = 0; i < 1000; i++) {\n    stringBuilder.Append(i);\n}\nstring efficientResult = stringBuilder.ToString();"},
-        {"subTitle": "Description"},
-        {"text": "Description of Title 2"}
+        {"text": "ב-C#, סוג object הוא הבסיס לכל שאר הסוגים ב NET Framework. זוהי מחלקת הבסיס האולטימטיבית עבור כל סוגי הנתונים ב-C#, גם סוגים שנקראים 'value type'  (כגון int, float, bool וכו') וסוגים שנקראים 'reference type' (כגון מחלקות, ממשקים, מערכים, וכו'), יורשים ישירות או בעקיפין מהמחלקה System.Object , המכונה בדרך כלל אובייקט."},
+        {"text" : "סוג האובייקט מוגדר במרחב השמות (namespace) של המערכת ומיוצג על ידי מילת המפתח object. זהו הסוג הכללי ביותר ב-C# ויכול להחזיק כל ערך או הפניה."},
+        {"subTitle" : "הנה כמה נקודות מפתח לגבי סוג האובייקט ב-C#:"},
+        {"text" : "סוג בסיס: כל הסוגים ב-C# יורשים באופן מרומז מאובייקט. המשמעות היא שכל סוג נתונים ב-C#, כולל מחלקות מותאמות אישית, יורשות אוטומטית את פונקציות של מחלקת האובייקט, כגון ToString(), Equals() ו-GetHashCode()."},
+        {"text" : "Boxing and Unboxing: ניתן להמיר סוגי ערכים ב-C# באופן מרומז לסוג אובייקט באמצעות תהליך שנקרא Boxing. באופן דומה, ניתן להמיר סוג אובייקט באופן מפורש בחזרה לסוג הערך המקורי שלו באמצעות unboxing."},
+        {"text" : "סוג דינמי: מגדירים משתנה להיות מסוג object כי הוא משמש לעתים קרובות בתרחישים שבהם סוג האובייקט אינו ידוע בזמן ההידור. אלא רק בזמן ריצה."},
+        {"text" : "סוג בסיס משותף: כאשר אתה צריך לעבוד עם אוספים הטרוגניים של אובייקטים (אובייקטים מסוגים שונים), אתה יכול להשתמש בסוג object כסוג בסיס משותף לאחסון כל סוג של אובייקט באוסף. ובכך הרשימה נגדיר תהא מסוג object וניתן יהיה לאחסן סוגים שונים של אוייבקטים ברשימה."},
+        {"text" : "Reflection: סוג האובייקט משמש בדרך כלל בReflection, שהיא היכולת של קוד לבדוק ולתפעל את המבנה וההתנהגות של טיפוסים בזמן ריצה."},
+        {"subTitle" : "הנה דוגמה לשימוש בסוג object :"},
+        {"codeSnippet" : "object obj1 = 10;\r\nint variable = (int)obj1;\r\nConsole.WriteLine(obj1.ToString());"},
+        {"subTitle": "הסבר של הקוד :"},
+        {"text": "Boxing: כאשר בקוד יש השמה שמקצה את הערך 10 ל-obj1, המהדר C# מבצע המרה אוטומטית של ערך int לאובייקט. המשמעות היא שאובייקט חדש נוצר על בערימה, והערך 10 מאוחסן בתוכו."},
+        {"text": "Unboxing: מאוחר יותר, כאשר מתבצעת המרה של obj1 בחזרה ל-int באמצעות (int)obj1, המרה נקראת unboxing. פעולה זו מאחזרת את ערך ה-int המקורי מהאובייקט. אם obj1 לא הכיל ערך שהוא מסוג  int (נניח ש obj1 הוא מסוג string), או אם הוא null, פעולה זו תזרוק שגיאה מסוג InvalidCastException."},
+        {"text": "ToString: לבסוף, הקריאה לפונקציה  ToString() מכיוון ש-obj1 מכיל int, הפונקציה ToString() מחזירה ייצוג מחרוזת של הערך השלם 10"}
     ]
 }

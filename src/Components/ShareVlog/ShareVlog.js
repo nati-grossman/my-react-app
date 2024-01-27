@@ -47,12 +47,12 @@ const ShareVlog = ({ vlogId }) => {
                     </a>
                 </div>
                 <div className="link-item">
-                    <div onClick={copyToClipboard} rel="noopener noreferrer">
-                    <div className="icon-square bg-link">
-                        <FontAwesomeIcon icon={faStaylinked} />
-                    </div>
-                    {copySuccess && <span className='copySuccess'>{copySuccess}</span>}
-                    <span className="tooltip">Link</span>
+                    <div onClick={copyToClipboard}>
+                        <div className="icon-square bg-link">
+                            <FontAwesomeIcon icon={faStaylinked} />
+                        </div>
+                        <span className="tooltip">Link</span>
+                        {copySuccess && <span className='copySuccess'>{copySuccess}</span>}                        
                     </div>
                 </div>
                 <div className="link-item">
