@@ -1,0 +1,29 @@
+  
+  .back-to-top-button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: opacity 0.3s;
+    opacity: 0;
+    z-index: 1000;
+  }
+  
+  .back-to-top-button.visible {
+    opacity: 1;
+  }
+  
+  .back-to-top-button:focus {
+    outline: none; /* Remove focus outline */
+  }
+  
+  /* Style the arrow icon */
+  .back-to-top-button svg {
+    width: 20px;
+    height: 20px;
+    color: black;
+  }
+  
+  

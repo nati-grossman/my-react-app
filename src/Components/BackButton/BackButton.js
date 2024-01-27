@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaArrowRight } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import './BackButton.css';
 
 
@@ -14,7 +15,7 @@ const BackButton = () => {
   return (
     <div className='mt-2'>
       <button type="button" className="btn back-button" onClick={goBack}>
-        <FaArrowRight />    בחזרה
+        <FontAwesomeIcon icon={faArrowRight} />    בחזרה
       </button>
     </div>    
   );

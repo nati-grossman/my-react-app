@@ -55,12 +55,12 @@ const ShareVlog = ({ vlogId }) => {
                     <span className="tooltip">Link</span>
                     </div>
                 </div>
-                <div class="link-item">
+                <div className="link-item">
                     <a href={gmailShareUrl} target="_blank" rel="noopener noreferrer">
-                    <div class="icon-square bg-gmail">
+                    <div className="icon-square bg-gmail">
                         <FontAwesomeIcon icon={faGoogle} />
                     </div>
-                    <span class="tooltip">Gmail</span>
+                    <span className="tooltip">Gmail</span>
                     </a>
                 </div>
             </div>

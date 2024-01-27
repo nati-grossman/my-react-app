@@ -5,6 +5,8 @@ import Error from '../Error/Error';
 import Code from '../Code/Code';
 import ShareVlog from '../ShareVlog/ShareVlog';
 import BackButton from '../BackButton/BackButton';
+import BackToTopButton from '../BackToTopButton/BackToTopButton';
+
 
 function VlogPage() {
     const { fileId } = useParams();
@@ -84,7 +86,9 @@ function VlogPage() {
 
                 <BackButton />
                 </div>
-                <div className='col-md-2'></div>
+                <div className='col-md-2'>
+                    <BackToTopButton />
+                </div>
             </div>      
             </div> 
         </>
