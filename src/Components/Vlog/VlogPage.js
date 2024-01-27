@@ -4,7 +4,7 @@ import { getBgClassByLanguage } from '../../Utils/helpers';
 import Error from '../Error/Error';
 import Code from '../Code/Code';
 import ShareVlog from '../ShareVlog/ShareVlog';
-import BackButton from '../MyNavbar/BackButton';
+import BackButton from '../BackButton/BackButton';
 
 function VlogPage() {
     const { fileId } = useParams();

@@ -1,0 +1,24 @@
+.back-button {
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white; 
+    transition: border-color 0.3s, color 0.3s;
+  }
+  
+  .back-button:hover {
+    border-color: white;
+    background-color: rgb(33, 37, 41); 
+    color: white; 
+    animation: pulse 0.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }

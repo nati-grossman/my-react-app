@@ -13,11 +13,11 @@ function Footer() {
           <div className="col">
             <p>צור קשר:</p>
             <a href={refLinkedin} target="_blank" rel="noopener noreferrer" className="text-light bg-hover-footer ms-3">
-              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              <FontAwesomeIcon icon={faLinkedin} size="2x" className="icon-footer p-1"/>
 
             </a>
             <a href={rdfGoogle} target="_blank" rel="noopener noreferrer" className="text-light bg-hover-footer">
-              <FontAwesomeIcon icon={faGooglePlusSquare} size="2x" />
+              <FontAwesomeIcon icon={faGooglePlusSquare} size="2x" className="icon-footer p-1"/>
             </a>
           </div>
         </div>

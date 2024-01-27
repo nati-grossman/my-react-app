@@ -30,7 +30,7 @@ export function getBgClassByLanguage(language) {
             return 'bg-danger';
         case 'web':
             return 'bg-primary';
-        case 'python':
+        case 'git':
             return 'bg-warning';
         case 'java':
             return 'bg-info';

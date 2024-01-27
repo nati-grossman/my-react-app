@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Code from '../Code/Code';
-import BackButton from './BackButton';
+import BackButton from '../BackButton/BackButton';
 import ShareVlog from '../ShareVlog/ShareVlog';
 import { getBgClassByLanguage } from '../../Utils/helpers';
 

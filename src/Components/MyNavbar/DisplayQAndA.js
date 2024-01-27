@@ -2,7 +2,7 @@ import React, { useState , useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getSubtleBgClass } from '../../Utils/helpers';
 import Error from '../Error/Error';
-import BackButton from '../MyNavbar/BackButton';
+import BackButton from '../BackButton/BackButton';
 
 function DisplayQAndA() {
     const { fileId } = useParams();
