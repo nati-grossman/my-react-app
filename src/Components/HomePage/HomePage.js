@@ -29,7 +29,7 @@ function HomePage() {
               <div className="centered text-white">
                 <h1 className='titleWeb'>פינתי-קוד</h1>
                 <h3 className='subTitleWeb'>פינת הקוד של נתי</h3>
-                <p>{textVlogs}</p>
+                <p className='descriptionWeb'>{textVlogs}</p>
               </div>
             </div>
           </div>

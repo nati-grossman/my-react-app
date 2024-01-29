@@ -36,7 +36,8 @@ function WebExplanation({ titleExplanation, textExplanation, img, imgInLeft }) {
 
       <div className='col-md-6'>
         <div className="image-container">
-          <img src={imgSrc} alt="HomeTitle" className={isHovered ? 'card-img rotated' : 'card-img'} />
+          <img src={imgSrc} alt="HomeTitle" 
+          className={isHovered ? imgInLeft ? 'card-img rotated-left' : 'card-img rotated-right' : 'card-img'} />
         </div>
       </div>
 

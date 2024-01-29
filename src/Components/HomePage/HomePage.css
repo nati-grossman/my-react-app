@@ -13,8 +13,12 @@
     transition: transform 0.5s ease; 
   }
   
-  .image-container img.rotated {
+  .image-container img.rotated-left {
     transform: rotate(15deg); 
+  }
+
+  .image-container img.rotated-right {
+    transform: rotate(-15deg); 
   }
   
   .titleExplan {
@@ -68,12 +72,15 @@
   }
 
   .titleWeb {
-    font-size: 5.5em; /* Set the font size of the title */
+    font-size: 9vw; /* Set the font size of the title */
     font-family: Arial, sans-serif;
   }
   
   .subTitleWeb {
-    font-size: 2.5em; /* Set the font size of the subtitle */
+    font-size: 4vw; /* Set the font size of the subtitle */
     font-family: Arial, sans-serif; 
   }
   
+  .descriptionWeb {
+    font-size: 1.5vw;
+  }
