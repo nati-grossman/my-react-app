@@ -1,15 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
-import Vlogs from './Vlogs';
-import QAndA from './QAndA';
 import LeetCode from './LeetCode';
-import DisplayVlog from './DisplayVlog';
 import DisplayQAndA from './DisplayQAndA';
 import QAndAHome from '../QAndA/QAndAHome';
 import VlogHome from '../Vlog/VlogHome';
 import VlogPage from '../Vlog/VlogPage';
 import HomePage from '../HomePage/HomePage';
+import AboutPage from '../AboutPage/AboutPage';
 
 import  './MyNavbar.css';
 
@@ -25,26 +23,21 @@ function MyNavbar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link as={NavLink} to="/vlogs" className='border-5 border-bottom text-white mx-2 bg-hover-navbar link-offset-3'>Vlogs</Nav.Link>
-              <Nav.Link as={NavLink} to="/qanda" className='border-5 border-bottom text-white mx-2 bg-hover-navbar link-offset-3'>Q&A</Nav.Link>
               <Nav.Link as={NavLink} to="/leetcode" className='border-5 border-bottom text-white mx-2 bg-hover-navbar link-offset-3'>LeetCode !!</Nav.Link>
-              <Nav.Link as={NavLink} to="/displayvlog" className='border-5 border-bottom text-white mx-2 bg-hover-navbar link-offset-3'>DisplayVlog</Nav.Link>
               <Nav.Link as={NavLink} to="/qandahome" className='border-5 border-bottom text-white mx-2 bg-hover-navbar link-offset-3'>QAndAHome</Nav.Link>
               <Nav.Link as={NavLink} to="/vloghome" className='border-5 border-bottom text-white mx-2 bg-hover-navbar link-offset-3'>VlogHome</Nav.Link>
-
+              <Nav.Link as={NavLink} to="/aboutpage" className='border-5 border-bottom text-white mx-2 bg-hover-navbar link-offset-3'>AboutPage</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/vlogs" element={<Vlogs />} />
           <Route exact path="/DisplayQAndA/:fileId" element={<DisplayQAndA />}  />
-          <Route path="/qanda" element={<QAndA />} />
           <Route path="/leetcode" element={<LeetCode />} />
-          <Route path="/displayvlog" element={<DisplayVlog />} />
           <Route path="/displayqanda" element={<DisplayQAndA />} />
           <Route path="/qandahome" element={<QAndAHome />} />
           <Route path="/vloghome" element={<VlogHome />} />
+          <Route path="/aboutpage" element={<AboutPage />} />
           <Route exact path="/vlogpage/:fileId" element={<VlogPage />} />
         </Routes>
       </div>
