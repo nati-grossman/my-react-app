@@ -1,28 +1,70 @@
 import React from 'react';
 
 const AboutPage = () => {
+
+  const aboutText = [
+    "היי לכולם!",
+    "אני נתי גרוסמן, אני מתכנת, ובלוגר מתחיל :)",
+    "אז איך התחיל הוולוג ?",
+    "כאשר התחלתי להתכונן לראינות עבודה, פתרתי מלא שאלות באתר leetcode, והתאהבתי באתר. כל פעם למדתי נושא חדש, חשיבה חדשה, והסתכלות חדשה על בעיה תכנותית.",
+    "אבל אז התקבלתי לעבודה. ולאט לאט ירדה המוטיבציה לפתור שאלות שיש באתר leetcode.",
+    "אז מה עושים?",
+    "כותבים וולוג!",
+    "וככה כל פעם שרציתי לכתוב וולוג. פתחתי את האתר leetcode התעמקתי בשאלה. חקרתי. פתרתי. כתבתי הסבר איך הגעתי לפתרון. וראיתי שזה אכן נותן לי חשק לפתור עוד שאלות.",
+    "וככה בעצם נבנה לו האתר 'פיניתי קוד'",
+    "אז מה המטרה שלי באתר ?",
+    "להנאות!",
+    "מה אתם תרוויחו ?",
+    "תהנו!",
+    "דיל?",
+    "אז מה תמצאו באתר ?",
+    "וולוגים שבמהותם הם פתרונות מפורטים ומלאים לשאלות שמצאתי באתר leetcode . אלו שאלות מהסוג שנתקלים בהן בראיונות עבודה.",
+    "בנוסף יש וולוגים על מלא נושאים ששואלים בראיונות עבודה (את השאלות מצאתי בגוגל) ואת התשובות כתבתי אחרי שחקרתי את אותן נושאים!",
+    "במשפט אחד - באתר יש מלא תוכן שיכול לעזור לכם להתכונן לראיונות.",
+    "אם נהניתם (או אם לא) אני יותר מאשמח לקבל מכם תגובות, הצעות לשיפורים ורעיונות נוספים.",
+    "אם נעזרתם בבלוג שלי כדי למצוא עבודה או להתקדם בקריירה תספרו לי, זה נותן לי אנרגיות להמשיך לכתוב!",
+    "נהיה בקשר ❤️"
+  ];
+
   return (
     <div className="container my-5 text-white">
-      <h1>אודות</h1>
-      <p>
-        
-        </p>            
-      
-      <h2>FAQ</h2>
-      <ul className="list-group">
-        <li className="list-group-item">
-          <strong>What topics do you cover?</strong>
-          <p>We cover a wide range of topics related to programming, including languages like JavaScript, Python, C#, HTML, CSS, and more. We also provide resources for data structures, algorithms, and interview preparation.</p>
-        </li>
-        <li className="list-group-item">
-          <strong>How can I contribute?</strong>
-          <p>If you have valuable insights, tutorials, or tips that you'd like to share with our community, you can contribute by submitting your content through our submission form. Our team will review it and publish it if it meets our standards.</p>
-        </li>
-        <li className="list-group-item">
-          <strong>Is your content free?</strong>
-          <p>Yes, all the content on our site is free to access. We believe in providing equal opportunities for learning to everyone.</p>
-        </li>
-      </ul>
+
+          <div>
+            <h1 className='text-center'>קצת עליי ועל הבלוג</h1>
+
+            <div className='card card-body text-black'>
+              {aboutText.map((item, index) => (
+                <p key={index}>{item}</p>
+              ))}  
+            </div> 
+          </div>
+
+          <div className='mt-5'>
+            <h2 className='text-center'>FAQ</h2>
+            <ul className="list-group p-0">
+              <li className="list-group-item">
+                <strong>אתה כותב בעצמך את כל הפתרונות לשאלות?</strong>
+                <p>כן. לאחר חקירה מעמיקה על הנושא. אני כותב את הפתרון שהוא 100% שלי.</p>
+              </li>
+              <li className="list-group-item">
+                <strong>כתבתי פתרון יעיל יותר לאחת מהשאלות שהצגת בבלוג, אפשר לשלוח לך?</strong>
+                <p>אני יותר מאשמח!! אלמד מכם ואשפר!</p>
+              </li>
+              <li className="list-group-item">
+                <strong>איך אתה בוחר את הנושאים לווגים שלך?</strong>
+                <p>כאשר אני קורא על משהו מעניין באינטרנט אני שומר לעצמי את הנושא. וככה אני צובר לי מספר נושאים להתמקד בהם. לפעמים אני מגלה שהנושא לא כ''כ מעניין. ולפעמים אני מגלה שהנושא מורכב ומצריך מספר וולוגים.</p>
+              </li>
+              <li className="list-group-item">
+                <strong>איך אתם שומרים על מוטיבציה ויצירתיות עם תוכן הוולוגים שלכם?</strong>
+                <p>שאלה טובה! פידבק מהאנשים זה המוטיבציה הכי טובה שיש לי.</p>
+              </li>
+              <li className="list-group-item">
+                <strong>איזו עצה היית נותן למישהו שרוצה להתחיל לרשום ווג?</strong>
+                <p>לקפוץ למים!! לכתוב כמה וולוגים בודדים ולעלות את האתר לאוויר!! ורק אח''כ להתמקד בהוספת ידע לאתר.</p>
+              </li>
+            </ul>
+          </div>
+
     </div>
   );
 };
