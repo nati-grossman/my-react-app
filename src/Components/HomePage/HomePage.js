@@ -1,6 +1,7 @@
 import React from 'react';
 
 import HomeTitle from '../../images/HomeTitle1.jpg';
+
 import WebExplanation from '../WebExplanation/WebExplanation';
 import ContentCounter from '../ContentCounter/ContentCounter';
 import './HomePage.css';
@@ -39,21 +40,21 @@ function HomePage() {
               <WebExplanation 
                 titleExplanation={titleVlogs}
                 textExplanation={textVlogs}
-                img={'HomeTitle'}
+                img={'vlog'}
                 imgInLeft={true}
              />
 
               <WebExplanation 
                 titleExplanation={titleQandA}
                 textExplanation={textQandA}
-                img={'HomeTitle1'}
+                img={'QA'}
                 imgInLeft={false}
               />
 
               <WebExplanation 
                 titleExplanation={titleLeetCode}
                 textExplanation={textLeetCode}
-                img={'HomeTitle1'}
+                img={'code'}
                 imgInLeft={true}
               />
             </div>

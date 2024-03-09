@@ -59,7 +59,7 @@ function VlogPage() {
                             if (item.subTitle) {
                             return (
                                 <div key={index} className="my-4">
-                                <h2>{item.subTitle}</h2>
+                                <h4>{item.subTitle}</h4>
                                 </div>
                             );
                             } else if (item.text) {

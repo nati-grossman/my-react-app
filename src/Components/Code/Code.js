@@ -16,7 +16,7 @@ function Code( {language = "csharp" , codeSnippet = "Console.WriteLine('Hello, W
             </div>
         </div>
 
-        <div className='card' dir="ltr">
+        <div className='card d-none' dir="ltr">
             <div className='card-body'>
                 <CodeToolbar languageIcon={"C#"} codeSnippet={codeSnippet} />
                 <SyntaxHighlighter language={language} style={prism} showLineNumbers wrapLongLines className='rounded-top-0 rounded-bottom-1 mt-0'>

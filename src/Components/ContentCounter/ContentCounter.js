@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Error from '../Error/Error';
+import './ContentCounter.css';
+
 
 function ContentCounter({ url, name }) {
   const [error, setError] = useState(null);
@@ -20,12 +22,14 @@ function ContentCounter({ url, name }) {
   }
 
   return (
-    <div className='col-md-4 my-5'>
-      <h3 className='text-center text-white mb-5'>{name}</h3>
-      <div className="card mx-auto mt-4 rhombus">
-        <span className="number">{length}</span>
+    <>
+      <div className='col-md-4 my-5'>
+        <h3 className='text-center text-white mb-5'>{name}</h3>
+        <div className="card mx-auto mt-4 circle-counter">
+          <div>{length}</div>
+        </div>
       </div>
-    </div>
+    </>    
   );
 }
 

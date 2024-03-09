@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
-import HomeTitle from '../../images/HomeTitle.jpg';
-import HomeTitle1 from '../../images/HomeTitle1.jpg';
+//import HomeTitle from '../../images/HomeTitle.jpg';
+//import HomeTitle1 from '../../images/HomeTitle1.jpg';
+import Code from '../../images/code.svg';
+import Vlog from '../../images/vlog.svg';
+import QA from '../../images/QA.svg';
 
 function WebExplanation({ titleExplanation, textExplanation, img, imgInLeft }) {
   const [isHovered, setIsHovered] = useState(false);
 
 
   let imgSrc = '';
-  if(img === 'HomeTitle') {
-    imgSrc = HomeTitle;
+  if(img === 'code') {
+    imgSrc = Code;
   }
-  if(img === 'HomeTitle1') {
-    imgSrc = HomeTitle1;
+  if(img === 'QA') {
+    imgSrc = QA;
+  }
+  if(img === 'vlog') {
+    imgSrc = Vlog;
   }
   
   const handleMouseEnter = () => {
